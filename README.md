@@ -10,8 +10,8 @@ This shell script checks whether one URL points to another. Using a two-column *
 
 #### whois_dotbrussels.sh
 This shell script launches the whois command on the list of registered .brussels domain names (as of March 2016). You will need to change your IP every 60 domain names for the script not to fail. The results are printed out in stdout and can be parsed using the below python program. 
-Download: here
+
 
 #### parsing_whois.py
-This python 2.7 program parses the result of the above program, where each individual result has been encapsulated in the pair of tags. It prints in stdout two columns, the first one containing the domain name and the second one containing the name, address, postal code and city of the registrant.
+This python 2.7 program parses the result of the above program, where each individual result has been encapsulated in a pair of <archive> </archive> tags. It prints in stdout two columns, the first one containing the domain name and the second one containing the name, address, postal code and city of the registrant.
 
